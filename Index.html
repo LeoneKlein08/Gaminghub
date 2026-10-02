@@ -14,22 +14,28 @@
     <!-- TOP HEADER -->
     <div class="top-header">
 
-        <!-- Menu-->
-        <div class="menu">
+        <!-- HAMBURGER -->
+        <button class="menu" onclick="openMenu()">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
 
         <!-- LOGO + NAME -->
         <div class="logo">
-
             <img src="logo.jpg" alt="Our Logo">
-
-            <span class="logo-name">GameHub</span>
-
+            <span class="logo-name">NEXUS HUB</span>
         </div>
 
+    </div>
+
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+		  <a href="games.html">Developers</a>
     </div>
 
 
@@ -38,16 +44,12 @@
 
         <div class="nav-links">
 
-            <a href="#">
+            <a href="browse.html">
                 Browse <span class="arrow">▼</span>
             </a>
 
             <a href="#">
                 Recommendations <span class="arrow">▼</span>
-            </a>
-
-            <a href="#">
-                Categories <span class="arrow">▼</span>
             </a>
 
             <a href="#">
@@ -71,5 +73,13 @@
 
     </div>
 
+
+    <!-- JAVASCRIPT -->
+    <script>
+    function openMenu() {
+      document.getElementById("sideMenu").classList.toggle("show");
+        }
+    </script>
+
 </body>
-</html>
+</html>	
