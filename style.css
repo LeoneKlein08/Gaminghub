@@ -368,5 +368,40 @@ body {
 .game-card:hover {
     transform: scale(1.03);
 }
+
+/* COMPANY PAGE */
+
+.company-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px;
+
+    background: rgba(0, 0, 0, 0.75);
+
+    color: white;
+
+    border-radius: 10px;
+}
+
+.company-container h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    color: #d98cff;
+}
+
+.company-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.company-container p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
 }
 </style>	
