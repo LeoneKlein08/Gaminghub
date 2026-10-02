@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Developers</title>
+
+    <!-- Connect to style.css -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* DEVELOPERS */
+
+        .developers {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .developer {
+            color: white;
+        }
+
+        .developer img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffc4e1;
+        }
+
+        .developer h3 {
+            margin: 15px 0 5px;
+            font-size: 22px;
+        }
+
+        .developer p {
+            margin: 0;
+            font-size: 16px;
+            color: #ffc4e1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+    <div class="top-header">
+
+        <!-- HAMBURGER -->
+        <button class="menu" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- LOGO + NAME -->
+        <div class="logo">
+            <img src="logo.jpg" alt="Our Logo">
+            <span class="logo-name">NEXUS HUB</span>
+        </div>
+
+    </div>
+
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu">
+
+        <a href="index.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+        <a href="developers.html">Developers</a>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="navbar">
+
+        <div class="nav-links">
+
+            <a href="browse.html">
+                Browse <span class="arrow">▼</span>
+            </a>
+
+            <a href="#">
+                Categories <span class="arrow">▼</span>
+            </a>
+
+            <a href="#">
+                Cart <span class="arrow">▼</span>
+            </a>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class="search">
+
+            <input
+                type="text"
+                placeholder="Search Games"
+            >
+
+            <button>🔍</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- DEVELOPERS -->
+    <div class="developers">
+
+        <div class="developer">
+            <img src="vincent.jpg" alt="Vincent">
+            <h3>Vincent</h3>
+            <p>Programmer</p>
+        </div>
+
+        <div class="developer">
+            <img src="leonne.jpg" alt="Leonne">
+            <h3>Leonne</h3>
+            <p>Programmer</p>
+        </div>
+
+        <div class="developer">
+            <img src="kurt.jpg" alt="Kurt">
+            <h3>Kurt</h3>
+            <p>Programmer</p>
+        </div>
+
+        <div class="developer">
+            <img src="aldrich.jpg" alt="Aldrich">
+            <h3>Aldrich</h3>
+            <p>Programmer</p>
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
