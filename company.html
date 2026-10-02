@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+
+    <!-- Connect to style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOP HEADER -->
+    <div class="top-header">
+
+        <!-- HAMBURGER -->
+        <button class="menu" onclick="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- LOGO + NAME -->
+        <div class="logo">
+            <img src="logo.jpg" alt="Our Logo">
+            <span class="logo-name">NEXUS HUB</span>
+        </div>
+
+    </div>
+
+
+    <!-- SIDE MENU -->
+    <div class="side-menu" id="sideMenu">
+
+        <a href="home.html">Home</a>
+        <a href="company.html">Company</a>
+        <a href="contact.html">Contact</a>
+        <a href="developers.html">Developers</a>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+    <div class="navbar">
+
+        <div class="nav-links">
+
+            <a href="browse.html">
+                Browse <span class="arrow">▼</span>
+            </a>
+
+            <a href="#">
+                Categories <span class="arrow">▼</span>
+            </a>
+
+            <a href="#">
+                Cart <span class="arrow">▼</span>
+            </a>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class="search">
+
+            <input
+                type="text"
+                placeholder="Search Games"
+            >
+
+            <button>🔍</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMPANY BACKGROUND -->
+    <div class="company-container">
+
+        <h1>NEXUS</h1>
+
+        <h2>Company Background</h2>
+
+        <p>
+            Nexus is a proposed digital gaming platform founded by
+            Vincent Baloco, Leonne Klein Balocod, Cacayan Kurt Ruzzel,
+            and Aldrich Labitoria.
+        </p>
+
+        <p>
+            The idea of Nexus is similar to an App Store or Play Store,
+            but it focuses on providing users with a platform where they
+            can discover PC and mobile games in one place.
+        </p>
+
+        <p>
+            Nexus offers different types of games, including FPS, MOBA,
+            RPG, survival horror, racing, strategy, sandbox, and battle
+            royale games. Some of the games included in our catalog are
+            Counter-Strike 2, VALORANT, League of Legends, Dota 2,
+            Minecraft, Grand Theft Auto V, Red Dead Redemption 2,
+            Genshin Impact, Mobile Legends, PUBG Mobile, Roblox,
+            Among Us, and many more.
+        </p>
+
+        <p>
+            The main service of Nexus is to allow users to browse games,
+            view their prices, genres, and descriptions, and choose games
+            based on their interests. Our goal is to make finding and
+            exploring games easier and more convenient for gamers.
+        </p>
+
+        <p>
+            For credibility and copyright, Nexus recognizes that the games
+            in our catalog are owned by their respective developers and
+            publishers. Nexus does not claim ownership of these games.
+            If Nexus becomes a real gaming platform, we would obtain the
+            proper licenses and permissions before distributing or selling
+            any copyrighted games.
+        </p>
+
+        <p>
+            Overall, Nexus aims to become a convenient and organized
+            platform that connects gamers with different PC and mobile
+            games while respecting the rights and copyrights of game
+            developers and publishers.
+        </p>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function openMenu() {
+            document.getElementById("sideMenu").classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
