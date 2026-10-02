@@ -24,9 +24,9 @@ body {
 /* TOP HEADER */
 
 .top-header {
-    height: 100px;
+    height: 50px;
 
-    background: #171d25;
+    background: rgba(23, 29, 37, 1);
 
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@ body {
 /* NAVIGATION BAR */
 
 .navbar {
-    min-height: 40px;
+    min-height: 20px;
 
     background: rgba(22, 32, 45, 0.45);
 
@@ -120,7 +120,7 @@ body {
 
     align-items: center;
 
-    gap: 25px;
+    gap: 10px;
 
     white-space: nowrap;
 }
@@ -130,7 +130,7 @@ body {
 
     text-decoration: none;
 
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .nav-links a:hover {
@@ -156,7 +156,7 @@ body {
 
     flex: 1;
 
-    max-width: 550px;
+    max-width:300px;
 
     height: 25px;
 }
@@ -169,7 +169,7 @@ body {
 
     height: 25px;
 
-    background: #333d4a;
+    background: rgba(23, 29, 37, 1);
 
     border: 2px solid #526171;
 
@@ -201,7 +201,1615 @@ body {
 
     border: none;
 
-    background: #1a9fff;
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+
+/* IPAD / SMALLER SCREEN */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+
+        gap: 20px;
+
+        flex-wrap: wrap;
+    }
+
+    .search {
+        width: 100%;
+
+        max-width: none;
+    }
+}
+
+
+/* VERY SMALL SCREEN */
+
+@media (max-width: 700px) {
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-name {
+        font-size: 22px;
+    }
+
+    .logo {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+</style><style>
+* {
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Gaming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 50vh;
+
+    overflow-x: hidden;
+}
+
+
+/* TOP HEADER */
+
+.top-header {
+    height: 50px;
+
+    background: rgba(23, 29, 37, 1);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+
+/* HAMBURGER */
+
+.menu {
+    margin-left: 20px;
+    width: 20px;
+}
+
+.menu span {
+    display: block;
+
+    height: 3px;
+
+    background: #ddd;
+
+    margin: 5px 0;
+
+    border-radius: 5px;
+}
+
+
+/* LOGO + NAME */
+
+.logo {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+}
+
+
+/* LOGO IMAGE */
+
+.logo img {
+    width: 50px;
+    height: 50px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* NAME BESIDE LOGO */
+
+.logo-name {
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    min-height: 20px;
+
+    background: rgba(22, 32, 45, 0.45);
+
+    display: flex;
+    align-items: center;
+
+    padding: 5px 10px;
+
+    gap: 10px;
+
+    backdrop-filter: blur(3px);
+}
+
+/* NAVIGATION LINKS */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #eee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* ARROW */
+
+.arrow {
+    font-size: 12px;
+
+    margin-left: 4px;
+}
+
+
+/* SEARCH */
+
+.search {
+    margin-left: auto;
+
+    display: flex;
+
+    flex: 1;
+
+    max-width:300px;
+
+    height: 25px;
+}
+
+
+/* SEARCH INPUT */
+
+.search input {
+    width: 100%;
+
+    height: 25px;
+
+    background: rgba(23, 29, 37, 1);
+
+    border: 2px solid #526171;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    padding: 0 15px;
+
+    outline: none;
+}
+
+
+/* SEARCH PLACEHOLDER */
+
+.search input::placeholder {
+    color: #ddd;
+}
+
+
+/* SEARCH BUTTON */
+
+.search button {
+    width: 50px;
+
+    height: 29px;
+
+    border: none;
+
+    background: rgba(23, 29, 37, 0.70);
 
     color: white;
 
