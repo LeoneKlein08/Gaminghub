@@ -14,13 +14,6 @@
     <!-- TOP HEADER -->
     <div class="top-header">
 
-        <!-- HAMBURGER -->
-        <button class="menu" onclick="openMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
         <!-- LOGO + NAME -->
         <div class="logo">
             <img src="logo.jpg" alt="Our Logo">
@@ -30,33 +23,31 @@
     </div>
 
 
-    <!-- SIDE MENU -->
-    <div class="side-menu" id="sideMenu">
-
-        <a href="index.html">Home</a>
-        <a href="company.html">Company</a>
-        <a href="contact.html">Contact</a>
-        <a href="developers.html">Developers</a>
-
-    </div>
-
-
     <!-- NAVIGATION -->
     <div class="navbar">
 
         <div class="nav-links">
 
+            <a href="index.html">
+                Home <span class="arrow">▼</span>
+            </a>
+
             <a href="browse.html">
                 Browse <span class="arrow">▼</span>
             </a>
-
-            <a href="#">
-                Categories <span class="arrow">▼</span>
-            </a>
-
+			
             <a href="#">
                 Cart <span class="arrow">▼</span>
             </a>
+			
+			<a href="company.html">
+                Company <span class="arrow">▼</span>
+            </a>
+
+			<a href="developers.html">
+                Developers <span class="arrow">▼</span>
+            </a>
+			
 
         </div>
 
@@ -129,14 +120,6 @@
         </p>
 
     </div>
-
-
-    <!-- JAVASCRIPT -->
-    <script>
-        function openMenu() {
-            document.getElementById("sideMenu").classList.toggle("show");
-        }
-    </script>
 
 </body>
 </html>
