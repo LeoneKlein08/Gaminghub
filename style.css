@@ -446,5 +446,23 @@ body {
     }
 }
 
+.video-description {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.video {
+    width: 50%;
+}
+
+.video video {
+    width: 100%;
+}
+
+.description {
+    width: 50%;
+}
+
 }
 </style>	
