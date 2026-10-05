@@ -454,16 +454,13 @@ body {
     color: white;
 }
 
-.video {
-    width: 50%;
-}
-
-.video video {
+.video video{
+display: block;
     width: 100%;
-}
-
-.description {
-    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    background: black;
+    border: 1px solid #555;
 }
 
 }
