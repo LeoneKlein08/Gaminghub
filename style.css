@@ -447,19 +447,31 @@ body {
 }
 
 /*Video Trailer*/
-.video video {
+.video-description {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.video-box,
+.description-box {
+    width: 50%;
+    border: 1px solid #555;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.video-box video {
     display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
     background: black;
-    border: 1px solid #555;
 }
 
-.description {
+.description-box {
     font-family: inherit;
     color: inherit;
 }
-
 }
 </style>	
