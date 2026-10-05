@@ -451,6 +451,7 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    color: white;
 }
 
 .video {
