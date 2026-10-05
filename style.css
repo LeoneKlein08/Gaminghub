@@ -447,20 +447,18 @@ body {
 }
 
 /*Video Trailer*/
-.video-description {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    color: white;
-}
-
-.video video{
-display: block;
+.video video {
+    display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
     background: black;
     border: 1px solid #555;
+}
+
+.description {
+    font-family: inherit;
+    color: inherit;
 }
 
 }
